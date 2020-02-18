@@ -56,7 +56,7 @@ print("-------------------------")
 predictions = linear_regression.predict(X_test)
 
 for i in range(len(predictions)):
-    print(predictions[i], y_test[i], X_test[i])
+    print("Predicted: ", predictions[i], "Data: ", X_test[i], "Actual: ", y_test[i])
 
 # Drawing and plotting model
 
