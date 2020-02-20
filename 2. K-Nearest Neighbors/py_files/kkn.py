@@ -61,7 +61,7 @@ print("Best cccuracy " + str(best_score) + " reached with " + str(best_neighbors
 
 # Seeing actual predictions
 
-predictions = model.predict(X_test)
+predictions = knn.predict(X_test)
 
 cars_classification = ["unacc,", "acc,", "good,", "vgood,"]
 for i in range(len(predictions)):
