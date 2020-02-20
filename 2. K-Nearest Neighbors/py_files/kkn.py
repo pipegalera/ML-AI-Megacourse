@@ -1,13 +1,9 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Feb  3 15:40:15 2020
-
 Author: Pipe Galera
-
 Project: Introduction to KNN
-
 Goal: classify cars in 4 categories based upon certain features.
-
 Data: https://archive.ics.uci.edu/ml/datasets/car+evaluation
 """
 
@@ -54,7 +50,7 @@ for i in range(1,100):
     knn = KNeighborsClassifier(n_neighbors = i)
     knn.fit(X_train, y_train)
     acc = knn.score(X_test, y_test)
-    #print("Accuracy " + "with " + str(_) + " neighbors is " + str(acc))
+    print("Accuracy " + "with " + str(i) + " neighbors is " + str(acc))
 
     # Highest Accuracy
     if acc > best_score:
