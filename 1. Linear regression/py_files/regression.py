@@ -1,3 +1,15 @@
+# @Author: Pipe galera
+# @Date:   28-02-2020
+# @Email:  pipegalera@gmail.com
+# @Last modified by:   Pipe galera
+# @Last modified time: 04-03-2020
+
+"""
+Data from:
+https://archive.ics.uci.edu/ml/datasets/Student+Performance
+Goal: Predicting 3 grade grades (G3)
+"""
+
 %reset
 # Packages
 import pandas as pd
@@ -8,6 +20,7 @@ from sklearn.utils import shuffle
 import matplotlib.pyplot as plt
 import pickle
 import os
+
 
 
 # Read data
@@ -45,9 +58,7 @@ for _ in range(100):
 
 # Viewing The Constants
 
-print("-------------------------")
 print( "Coefficients: \n", linear_regression.coef_)
-print("-------------------------")
 print("Intercept \n", linear_regression.intercept_)
 print("-------------------------")
 
